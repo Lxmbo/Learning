@@ -1,25 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms Prac</title>
 </head>
+
 <body>
     <h1>Forms</h1>
     Forms are a collection of elements. <br>
-    <p>the &ltform&gt element is just a container for differnet types of elements. Groups inputs together. <b>Grouping a form will dictate where all of the forms information goes once submitted</b>. Form A will go to a certain location and form B will go elsewhere.</p>
+    <p>the &ltform&gt element is just a container for differnet types of elements. Groups inputs together. <b>Grouping a
+            form will dictate where all of the forms information goes once submitted</b>. Form A will go to a certain
+        location and form B will go elsewhere.</p>
 
     <p>
-        The action attribute will tell the form where to go. 
+        The action attribute will tell the form where to go.<br>
+        All inputs need a name, and type
+        <br>
+        <b><u>MDN has a massive amount of options and what they do on the site and how to use them along with what they need to work properly </b></u>
     </p>
 
-<form action="/tacos"></form>
-    <input type="text" placeholder="Username">
-    <input type="password">
-    <input type="color">
-    <input type="number">
-    
+    <form action="/tacos">
+        <p>
+            <label for="username">Enter a Username:</label>
+            <input id="username" name="username" type="text" placeholder="Username">
+            <label for="password">Enter a password:</label>
+            <input id="password" type="password" placeholder="password" name="password">
+        </p>
+        <p>
+            <label for="color">Select a color:</label>
+            <input id="color" type="color"name="color">
+        </p>
+        <p>
+            <label for="number">Enter a number</label>
+            <input id="number" type="number"name="number">
+        </p>
+        <p>
+            <label for="apples">Check if you like apples</label>
+            <input id="apples" type="checkbox"name="checkbox">
+        </p>
+
+        <p>
+            The above is an example of a form without a submit button. It has labels per input and allows you to do
+            several different things.
+        </p>
+        <h3>
+            Buttons:
+        </h3>
+        <button >submit
+            
+        </button>
+
+    </form>
+
+<form action="/brid">
+<input type="text" name="q">
+<button>submit</button>
+<h2> more inputs</h2>
+<label for="agree">I agree</label>
+<input name="agree" id="agree"type="checkbox" checked> <!-- saying "checked" indicates that this check box will start out checked when the page is loaded-->
+<button>Submit</button>
+<label for="xs">XS</label>
+<input type="radio" name="size" value="xs"id="xs">
+<label for="s">S</label>
+<input type="radio" name="size" value="s"id="s">
+<label for="m">M</label>
+<input type="radio" name="size" value="m"id="m">
+radio buttons need a vaule so that we know which button is picked when the for is submitted.
+<br>
+<label for="meal">Meal type</label>
+<select name="meal" id="meal">
+<option value="">>Select an Option<</option>
+<option value="steak">Steak</option>
+<option value="chicken">Chicken</option>
+<option value="veg">Veggies</option>
+<option value="pork">Pork</option>
+
+</select>
+
+<input type="range" name="cheese" id="cheese" min="1" max="100"  value="1">
+<p>
+<label for="textarea">any special reqs</label><br>
+
+<textarea name="reqs" id="reqs" cols="30" rows="10" placeholder="Special requests here:"></textarea>
+
+</p>
+</form>
+
+
+
+
+
+
+
+
+
 </body>
+
 </html>
