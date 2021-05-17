@@ -72,7 +72,7 @@ radio buttons need a vaule so that we know which button is picked when the for i
 <br>
 <label for="meal">Meal type</label>
 <select name="meal" id="meal">
-<option value="">>Select an Option<</option>
+<option value="option" selected>>Select an Option<</option>
 <option value="steak">Steak</option>
 <option value="chicken">Chicken</option>
 <option value="veg">Veggies</option>
@@ -89,13 +89,23 @@ radio buttons need a vaule so that we know which button is picked when the for i
 </p>
 </form>
 
+<h2>
+    Validations Demo
+</h2>
+<form action="/dummy">
+<label for="first">Enter First Name</label>
+<input type="text" name="first" id="first" required>
+<button>submit</button>
+<p>
+    <label for="username">Username</label>
+    <input type="text" name="username" id="username" minlength="5" maxlength="20" required>
 
-
-
-
-
-
-
+</p>
+<p>
+    <label for="email">Please enter your email :]</label>
+    <input type="email" name="email" id="email" required>
+</p>
+</form> 
 
 </body>
 

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>
+        Register Form
+    </title>
+</head>
+
+<body>
+    <h1>Race registration</h1>
+    <form action="/registration">
+        <div>
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname" required minlength="3" maxlength="20">
+            <label for="lastname">Last Name</label>
+            <input type="lastname" name="lastname" id="lastname" required minlength="3" maxlength="20">
+        </div>
+        <p>Please Select A Race</p>
+        <div>
+            <input type="radio" name="race" id="funrun" value="fun">
+            <label for="funrun">Fun Run 5k</label>
+        </div>
+        <div>
+            <input type="radio" name="race" id="halfmar" value="half">
+            <label for="halfmar">Half Marathon</label>
+        </div>
+        <div>
+            <input type="radio" name="race" id="fullmar" value="full">
+            <label for="fullmar">Full Marathon</label>
+        </div>
+        <p></p>
+        <div>
+            <label for="email">Email address:</label>
+            <input type="email" name="email" id="email" required placeholder="E-Mail">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required placeholder="Password" minlength="7"
+                maxlength="20">
+        </div>
+        <div>
+            <p>What age group will you be running with?</p>
+            <label for="age">Age Groups</label>
+            <select name="age" id="age">
+                <option value="0-17">Under 18</option>
+                <option value="18-30">18-30</option>
+                <option value="30-50">30-50</option>
+                <option value="50+">50+</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
