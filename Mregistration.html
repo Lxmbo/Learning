@@ -8,10 +8,11 @@
     <title>
         Register Form
     </title>
+    <link rel="stylesheet" href="stylesheet2.css">
 </head>
 
 <body>
-    <h1>Race registration</h1>
+    <h1>RACE REGISTRATION</h1>
     <form action="/registration">
         <div>
             <label for="firstname">First Name</label>
@@ -20,15 +21,15 @@
             <input type="lastname" name="lastname" id="lastname" required minlength="3" maxlength="20">
         </div>
         <p>Please Select A Race</p>
-        <div>
+        <div id="racetype">
             <input type="radio" name="race" id="funrun" value="fun">
             <label for="funrun">Fun Run 5k</label>
         </div>
-        <div>
+        <div id="racetype">
             <input type="radio" name="race" id="halfmar" value="half">
             <label for="halfmar">Half Marathon</label>
         </div>
-        <div>
+        <div id="racetype">
             <input type="radio" name="race" id="fullmar" value="full">
             <label for="fullmar">Full Marathon</label>
         </div>

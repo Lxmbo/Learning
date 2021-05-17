@@ -1,0 +1,28 @@
+body{
+    line-height: 2;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 25px;
+    color:#eeeeee;
+    background-color: #393e46;
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: 15px;
+text-decoration: #aad8d3 underline;
+    text-align: center;
+    color:#00adb5;
+}
+input{
+    color:white;
+    background-color: #aad8d3;
+}
+button{
+    
+    color:#eeeeee;
+    background-color: #00adb5;
+}
+#racetype{
+    padding-left: 50px;
+}

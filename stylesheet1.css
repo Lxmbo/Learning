@@ -1,12 +1,36 @@
-h1,h2
+h1
 {
+    font-family: Arial, Helvetica, sans-serif;
+    /*font family: chosen in order based on what fonts the user has availible*/
+    font-size: 80px;
+    letter-spacing: 15px;
+    text-decoration: white underline;
+    font-weight: 400;
+    text-align: center;
     color: red;
     background-color: rgb(0, 0, 0);
 }
-h3{
-    color:white;
+h2,h3{
+    color:red;
 }
 body{
     color:white;
     background-color: black;
+}
+a{
+    color:rgb(212, 154, 29);
+    
+}
+p{
+line-height: 2;
+
+}
+#syntax{
+    color: rgb(255, 104, 104);
+    font-weight: bold;
+    text-align: center;
+}
+#important{
+    color:gold;
+    font-weight: bold;
 }
