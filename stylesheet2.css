@@ -1,11 +1,27 @@
 body{
+    
     line-height: 2;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 25px;
     color:#eeeeee;
     background-color: #393e46;
 }
+footer{
+    background-color: #404855;
+    padding-top: 2em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+footer a{
+    text-shadow: rgb(43, 43, 43) 0.09em 0.09em;
+   text-decoration: #aad8d3 underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-inline: 6em;
+    color:#00adb5 ;
+}
 h1{
+    
+    text-shadow: rgb(43, 43, 43) 5px 5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 70px;
     font-weight: bold;
@@ -15,14 +31,27 @@ text-decoration: #aad8d3 underline;
     color:#00adb5;
 }
 input{
-    color:white;
+    color:black;
     background-color: #aad8d3;
 }
 button{
-    
-    color:#eeeeee;
-    background-color: #00adb5;
+    font-weight: bold;
+    border-right-width: 3px;
+    border-top-width:3px ;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+    border-color: #00adb5;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #aad8d3;
 }
 #racetype{
     padding-left: 50px;
+}
+
+select{
+    font-weight: bold;
+    background-color: #aad8d3;
+}
+#margin{
+    margin-left: 3em;
 }

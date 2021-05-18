@@ -88,6 +88,23 @@
     <p>You can use a comma to select multiple things at once and give them the same styles. </p>
     ID selector: you can add an ID on to a single element and provide a hook, that way we can select it in CSS and give it an exact stlye without ruining the style of anything else.
     </p>
+    <p>
+        Class selector: Similar to Id, a class can be applied to multiple elements. allowing us to group them together and style them similarly. To use the class selector add class="(classnamehere)" then in CSS to start styling we select the class as follows <span id="important">.classname{ color: x ;}</span>
+    </p>
+    <p>
+    Descendant selector: <span id="important">li a {color:gold};</span> Written with a space the Descendant selector allows us to select specific tags within a different tag. In this example we're selecting all anchor (a) tags that have been nested within the list (li) tag.
+    </p>
+    <p>Adjacent selector: <span id="important">h1+p{color; red};</span> Adjacent selectors select a tag that is immdeiately proceeded by another tag. In this example we are selecting only the paragraphs (p) that are proceeded by a h1 heading tag on the same level. All other paragraphs besides the ones that fit this criteria will remain unchanged. This is <b>NOT</b> nesting.
+    </p>
+    <p>
+        Direct child selector:<span id="important">div>li{color:white;}</span> The direct child selector selects only the tag that is one level down from the parent tag. 
+
+    </p>
+    <p>
+        Attribute selector:<span id="important">input[type="text"] width: 2em; color:white;
+        </span> allows us to select elements based on some particular attribute. In this particular case we are selecting all inputs where "type" is set to text. The type could be a lot of things: password, email search, etc. Class, type, and Id are all attributes. So thigns like div[class="123"]{color:red;} are possible. 
+    </p>
 </body>
+
 
 </html>
