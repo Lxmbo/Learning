@@ -86,24 +86,86 @@
         Universal element selectors: (*) selects every single element.<br>
         Element selectors: (button, h1, h2, p, etc.)<br>
     <p>You can use a comma to select multiple things at once and give them the same styles. </p>
-    ID selector: you can add an ID on to a single element and provide a hook, that way we can select it in CSS and give it an exact stlye without ruining the style of anything else.
+    ID selector: you can add an ID on to a single element and provide a hook, that way we can select it in CSS and give
+    it an exact stlye without ruining the style of anything else.
     </p>
     <p>
-        Class selector: Similar to Id, a class can be applied to multiple elements. allowing us to group them together and style them similarly. To use the class selector add class="(classnamehere)" then in CSS to start styling we select the class as follows <span id="important">.classname{ color: x ;}</span>
+        Class selector: Similar to Id, a class can be applied to multiple elements. allowing us to group them together
+        and style them similarly. To use the class selector add class="(classnamehere)" then in CSS to start styling we
+        select the class as follows <span id="important">.classname{ color: x ;}</span>
     </p>
     <p>
-    Descendant selector: <span id="important">li a {color:gold};</span> Written with a space the Descendant selector allows us to select specific tags within a different tag. In this example we're selecting all anchor (a) tags that have been nested within the list (li) tag.
+        Descendant selector: <span id="important">li a {color:gold};</span> Written with a space the Descendant selector
+        allows us to select specific tags within a different tag. In this example we're selecting all anchor (a) tags
+        that have been nested within the list (li) tag.
     </p>
-    <p>Adjacent selector: <span id="important">h1+p{color; red};</span> Adjacent selectors select a tag that is immdeiately proceeded by another tag. In this example we are selecting only the paragraphs (p) that are proceeded by a h1 heading tag on the same level. All other paragraphs besides the ones that fit this criteria will remain unchanged. This is <b>NOT</b> nesting.
+    <p>Adjacent selector: <span id="important">h1+p{color; red};</span> Adjacent selectors select a tag that is
+        immdeiately proceeded by another tag. In this example we are selecting only the paragraphs (p) that are
+        proceeded by a h1 heading tag on the same level. All other paragraphs besides the ones that fit this criteria
+        will remain unchanged. This is <b>NOT</b> nesting.
     </p>
     <p>
-        Direct child selector:<span id="important">div>li{color:white;}</span> The direct child selector selects only the tag that is one level down from the parent tag. 
+        Direct child selector:<span id="important">div>li{color:white;}</span> The direct child selector selects only
+        the tag that is one level down from the parent tag.
 
     </p>
     <p>
         Attribute selector:<span id="important">input[type="text"] width: 2em; color:white;
-        </span> allows us to select elements based on some particular attribute. In this particular case we are selecting all inputs where "type" is set to text. The type could be a lot of things: password, email search, etc. Class, type, and Id are all attributes. So thigns like div[class="123"]{color:red;} are possible. 
+        </span> allows us to select elements based on some particular attribute. In this particular case we are
+        selecting all inputs where "type" is set to text. The type could be a lot of things: password, email search,
+        etc. Class, type, and Id are all attributes. So thigns like div[class="123"]{color:red;} are possible.
     </p>
+    <p>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes"> Pseudo classes</a>: keyword added to
+        a selector that specifies a special state of selected elements.
+    <ol>
+        <li>:active</li> - when button or link is clicked it will change the style based on set parameters.
+        <li>:checked</li> - when a checkbox or radio button is checked style will changed based on set parameters
+        <li>:first</li>
+        <li>:first-child</li>
+        <li>:hover</li> - when mouse hovers over element changes style based on parameters.
+        <li>:not()</li>
+        <li>:nth-child</li>
+        <li>:nth-of-type</li>
+    </ol>
+    </p>
+    <p>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements">Pseudo elements</a>: just about the
+        same as pseudo classes, but can go a little deeper into the actual code selecting very specific things like
+        single letters in a word for example.
+    <ol>
+        <li>::after</li>
+        <li>::before</li>
+        <li>::cue</li>
+        <li>::cue-region</li>
+        <li>::first-letter</li> - Selects the first letter of a given element ie h2::first-letter{color:red;}
+        <li>::first-line</li>
+        <li>::selection</li>
+        <li>::slotted()</li>
+    </ol>
+    </p>
+    <p>
+    <h3>The CSS Cascade:</h3> The order out styles are encountered actually matters. The browser reads from top to
+    bottom and selects the most recent style for a particular element that it has seen. This is also the same if we have
+    multiple style sheets linked to one given page. The most recently read style sheet will be the one the browser uses.
+    <p>
+        <span id="important">Specificity:</span>
+        How the browser decides which rules to apple when multiple rules could apply to the same element.
+      
+            <br>It is a measure of how specific a given selector is. The more specific selector "wins". <br>For example an #id selector is extremely specific and will beat out a class and element selector. A class selector is kinda specific and will beat out an element selector, but lose to an #id. Lastly and element selector isn't very specific, and will generally only be used if there is no competition. If a color has a conflict but a font stlye does not, the color will be subject to specificity. The font style however will not and will go all the way down and be used. Even if it is only under an element selector. Because that specific style doesnt have anything to compete with. <br>Inline styles are the most specific and can not be overwritten in a style sheet. So avoid inline styles. The same with !important (which is used after a style). It signals to the broswer that this should be the last stop. The only thing considered. That's why it is not recommended. Don't use these!
+        
+    </p>
+    </p>
+    <h3>
+        Box Model:
+    </h3>
+    <p>
+        Box model is the idea that everything in CSS has a box around it. Wether it be a picture, some text, or a search bar. There's a box around everything. We can change those box's size with <span id="important">height</span> and <span id="important">width</span>. These two elements allow us to make changes to the actual area where the content is placed. By default the width of a box will go all the way across the page. If this is changed it will alter something like (text-align:center). This is because if the width box is changed, the content which in this case is the text will go with it. To change this we use margin.
+    </p>
+    <p>
+        The Box model is simple, but has a lot of content which I will not go over here. Please proceed to the MDN link provided for <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model">Box Model</a>.
+    </p>
+
 </body>
 
 

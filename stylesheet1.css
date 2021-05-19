@@ -1,5 +1,9 @@
 h1
 {
+    padding:1em 1em 1em 1em;
+    border-style:solid;
+    border-width: 10px 0px 0px 10px;
+    border-color: rgb(161, 0, 0) red red grey ;
     font-family: Arial, Helvetica, sans-serif;
     /*font family: chosen in order based on what fonts the user has availible*/
     font-size: 80px;
@@ -24,14 +28,23 @@ a{
 }
 p{
 line-height: 2;
-
+width:80%;
 }
 #syntax{
+    margin-left: 46%;
+    width:5em;
     color: rgb(255, 104, 104);
     font-weight: bold;
     text-align: center;
+    border-width: thin;
+    border-color: white;
+    border-style: solid;
+    padding: 1em 1em 1em 1em;
 }
 #important{
     color:gold;
     font-weight: bold;
+}
+a:hover{
+    color:red;
 }
